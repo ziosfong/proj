@@ -384,8 +384,9 @@ flnum();
 			if(phasev == value.phase ){
 				if(blockv == value.block){
 					if(flatv == value.flat){
-						DS = 1 ;
+						
 						alert("I am an alert box!2.1");
+						var DS = 1 ;
 					}
 				}
 				}
