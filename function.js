@@ -402,9 +402,6 @@ flnum();
 	//}
 	
 	//carpark
-	if ( cp=="1"){
-		
-	}
 	
 	//time dummy
 //alert("beforejsontime");
@@ -495,6 +492,6 @@ switch (phasev){
 	if (value.DirS == 1){
 	document.getElementById("direct_facing").value = "yes"  ;
 	}
-	document.getElementById("tt_dum").value = TD ;
+	document.getElementById("tt_dum").value = cp ;
 	document.getElementById("E_price").value = e_p ;
 }
