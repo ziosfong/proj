@@ -479,7 +479,7 @@ switch (phasev){
 			}
 		break;
 	}
-	console.log(cp);
+	console.log(value.cp);
 	
 	document.getElementById("B_age").value = age + 1 ;
 	
