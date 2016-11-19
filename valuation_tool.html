@@ -1,0 +1,121 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="function.js" type="text/javascript"></script>
+</head>
+<body>
+<table column="3" >
+<tr><td>
+<form>
+Block:
+	<select id="phase" >
+		<option value="1">Phase1 Locwood Court</option>
+		<option value="2">Phase2 Sherwood Court</option>
+		<option value="3">Phase3 Chestwood Court</option>
+		<option value="5">Phase5 Lynwood Court</option>
+		<option value="6">Phase6 Maywoodwood Court</option>
+		<option value="7">Phase7 Kenswood Court</option>
+	</select>
+	<select id="block" onchange="blknum()">
+		<option value="1">Block 1</option>
+		<option value="2">Block 2</option>
+		<option value="3">Block 3</option>
+		<option value="4">Block 4</option>
+		<option value="5">Block 5</option>
+		<option value="6">Block 6</option>
+		<option value="7">Block 7</option>
+		<option value="8">Block 8</option>
+		<option value="9">Block 9</option>
+		<option value="10">Block 10</option>
+		<option value="11">Block 11</option>
+		<option value="12">Block 12</option>
+		<option value="13">Block 13</option>
+		<option value="14">Block 14</option>
+	</select>
+	<br><br>
+	Floor Level:
+	<input type="number" id="fl_level" min="1" max="39" onchange=flnum()></input>
+	<br><br>
+	Flat:
+	<select id="flat">
+		<option value="1">Flat A</option>
+		<option value="2">Flat B</option>
+		<option value="3">Flat C</option>
+		<option value="4">Flat D</option>
+		<option value="5">Flat E</option>
+		<option value="6">Flat F</option>
+		<option value="7">Flat G</option>
+		<option value="8">Flat H</option>
+	</select>
+	<br><br>
+	Carpark:
+	<input type="radio" name="carpark" value="1" id="carcheck" >Yes</input>
+	<input type="radio" name="carpark" value="0" id="carcheck">No</input>
+	<br><br>
+	Valutaion Date:
+	<select id="year" onchange=agenum()>
+		<option value="1991">1991</option>
+		<option value="1992">1992</option>
+		<option value="1993">1993</option>
+		<option value="1994">1994</option>
+		<option value="1995">1995</option>
+		<option value="1996">1996</option>
+		<option value="1997">1997</option>
+		<option value="1998">1998</option>
+		<option value="1999">1999</option>
+		<option value="2000">2000</option>
+		<option value="2001">2001</option>
+		<option value="2002">2002</option>
+		<option value="2003">2003</option>
+		<option value="2004">2004</option>
+		<option value="2005">2005</option>
+		<option value="2006">2006</option>
+		<option value="2007">2007</option>
+		<option value="2008">2008</option>
+		<option value="2009">2009</option>
+		<option value="2010">2010</option>
+		<option value="2011">2011</option>
+		<option value="2012">2012</option>
+		<option value="2013">2013</option>
+		<option value="2014">2014</option>
+		<option value="2015">2015</option>
+		<option value="2016">2016</option>
+		
+	</select>
+	<select id="month" onchange=agenum()>
+		<option value="01">Jan</option>
+		<option value="02">Feb</option>
+		<option value="03">Mar</option>
+		<option value="04">Apr</option>
+		<option value="05">May</option>
+		<option value="06">Jun</option>
+		<option value="07">Jul</option>
+		<option value="08">Aug</option>
+		<option value="09">Sep</option>
+		<option value="10">Oct</option>
+		<option value="11">Nov</option>
+		<option value="12">Dec</option>
+	</select>
+	
+	<br><br>
+	<input type="button" id="valuation"  value="valuation" onclick="price()"></input>
+	<input type="reset" id="reset"></input>
+</form>
+</td>
+<td></td>
+<td>
+<div>
+<form id="form2">
+SFA: <input type="text" id="SFAv"></input>
+<br><br>
+Building Age: <input type="text" id="B_age"></input>
+<br><br>
+South Facing:<input type="text" id="direct_facing"></input>
+<br><br>
+Estimated Price:<input type="text" id="E_price"></input>
+</form>
+</div>
+</td></tr>
+</table>
+</body>
+</html>
