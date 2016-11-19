@@ -331,7 +331,7 @@ function price(){
 				alert(value.phase);
 					if(  blockv == value.block){
 						if (fl == value.floor){
-							complex_dummy = 1;
+							 complex_dummy = 1;
 						}
 					}
 				}
