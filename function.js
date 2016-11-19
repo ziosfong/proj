@@ -130,7 +130,7 @@ function price(){
 	
 	var tdv = year.toString() + month.toString();
 		document.getElementById("SFAv").value = SFA ;
-
+document.getElementById("direct_facing").value = "no" ;
 		
 		
 	
@@ -486,7 +486,7 @@ switch (phasev){
 	//window.alert("age");
 	//price
 	
-	e_p =  -0.081357 * age + 0.002290 * age * age + 0.003177 * SFA + 2.05* 0.0000001* SFA * SFA + 0.010539 * fl * fl * fl + 0.041815 * DirS + 0.022967 * LU + 0.427346 * cp + TD - 8.35 * 0.00001  ;
+	e_p =  -0.081357 * age + 0.002290 * age * age + 0.003177 * SFA + 2.05* 0.0000001* SFA * SFA + 0.010539 * fl  + 0.041815 * DirS + 0.022967 * LU + 0.427346 * cp + TD - 8.35 * 0.00001* fl * fl  ;
 	
 	//print out
 	
