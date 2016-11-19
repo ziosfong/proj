@@ -384,7 +384,7 @@ flnum();
 			if(phasev == value.phase ){
 				if(blockv == value.block){
 					if(flatv == value.flat){
-						DirS = 1 ;	 
+						var DirS = 1 ;	 
 					console.log(value.DirS);
 						alert("I am an alert box!2.1");
 						 
