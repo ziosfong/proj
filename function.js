@@ -120,7 +120,7 @@ function price(){
 	var fl = parseInt(document.getElementById("fl_level").value);
 	var cp = parseInt(document.getElementById("carcheck").value);
 	var SFA = 0;
-	var DS = 0;
+	var DirS = 0;
 	var LU = 0;
 	var	TD = 0;
 	var e_p = 0 ;
@@ -386,7 +386,8 @@ flnum();
 					if(flatv == value.flat){
 						
 						alert("I am an alert box!2.1");
-						var DS = 1 ;
+						 DirS = 1 ;
+						 document.getElementById("direct_facing").value = "yes" 
 					}
 				}
 				}
@@ -490,7 +491,7 @@ switch (phasev){
 	
 	document.getElementById("SFAv").value = SFA ;
 	document.getElementById("B_age").value = age ;
-	if (DS == 1){
+	if (DirS == 1){
 	document.getElementById("direct_facing").value = "yes"  ;
 	}
 	document.getElementById("tt_dum").value = TD ;
