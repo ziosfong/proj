@@ -384,10 +384,10 @@ flnum();
 			if(phasev == value.phase ){
 				if(blockv == value.block){
 					if(flatv == value.flat){
-						
+						DirS = 1 ;
 						alert("I am an alert box!2.1");
-						 DirS = 1 ;
-						 document.getElementById("direct_facing").value = "yes" 
+						 
+						 document.getElementById("direct_facing").value = "yes" ;
 					}
 				}
 				}
