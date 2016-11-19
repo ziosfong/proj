@@ -385,7 +385,7 @@ flnum();
 				if(blockv == value.block){
 					if(flatv == value.flat){
 						var DirS = 1 ;	 
-					console.log(value.DirS);
+					document.getElementById("direct_facing").value = DirS ;
 						alert("I am an alert box!2.1");
 						 
 					
