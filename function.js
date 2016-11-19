@@ -128,7 +128,7 @@ function price(){
 	var	age =  0 ;
     var	age_dummy = 0;
 	
-	var tdv = year.toString() + "-" + month.toString();
+	var tdv = year.toString() + month.toString();
 		document.getElementById("SFAv").value = SFA ;
 
 		
@@ -399,6 +399,9 @@ flnum();
 	//}
 	
 	//carpark
+	if ( cp=="yes"){
+		
+	}
 	
 	//time dummy
 //alert("beforejsontime");
@@ -489,7 +492,8 @@ switch (phasev){
 	if (DS == 1){
 	document.getElementById("direct_facing").value = "yes"  ;
 	}else{
-	document.getElementById("direct_facing").value = "no"
+	document.getElementById("direct_facing").value = "no" ;
 	}
+	document.getElementById("tt_dum").value = TD ;
 	document.getElementById("E_price").value = e_p ;
 }
