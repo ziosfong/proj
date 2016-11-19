@@ -385,7 +385,7 @@ flnum();
 				if(blockv == value.block){
 					if(flatv == value.flat){
 						DirS = 1 ;	 
-					
+					console.log(value.DirS);
 						alert("I am an alert box!2.1");
 						 
 					
@@ -479,7 +479,7 @@ switch (phasev){
 			}
 		break;
 	}
-	console.log(value.cp);
+	
 	
 	document.getElementById("B_age").value = age + 1 ;
 	
