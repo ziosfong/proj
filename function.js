@@ -489,7 +489,7 @@ switch (phasev){
 	
 	document.getElementById("SFAv").value = SFA ;
 	document.getElementById("B_age").value = age ;
-	if (DS == "1"){
+	if (DS == 1){
 	document.getElementById("direct_facing").value = "yes"  ;
 	}
 	document.getElementById("tt_dum").value = TD ;
