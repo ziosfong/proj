@@ -491,8 +491,6 @@ switch (phasev){
 	document.getElementById("B_age").value = age ;
 	if (DS == "1"){
 	document.getElementById("direct_facing").value = "yes"  ;
-	}else{
-	document.getElementById("direct_facing").value = "no" ;
 	}
 	document.getElementById("tt_dum").value = TD ;
 	document.getElementById("E_price").value = e_p ;
