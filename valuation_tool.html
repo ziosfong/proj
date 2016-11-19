@@ -49,8 +49,10 @@ Block:
 	</select>
 	<br><br>
 	Carpark:
-	<input type="radio" name="carpark" value="1" id="carcheck" >Yes</input>
-	<input type="radio" name="carpark" value="0" id="carcheck">No</input>
+	<select id="carcheck">
+	<option value="1">Yes</option>
+		<option value="0">No</option>
+	</select>
 	<br><br>
 	Valutaion Date:
 	<select id="year" onchange=agenum()>
