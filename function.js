@@ -310,7 +310,7 @@ function price(){
 	}
 	//checkifsmallbalcony
 		$.getJSON("sfads.json",function(sfads){
-		$each(sfads,function(index, value){
+		$.each(sfads,function(index, value){
 			if(value.phase == phasev){
 				if(value.block == blockv){
 					if(value.flat == flatv){
@@ -326,7 +326,7 @@ function price(){
 	if (phasev == 5 || phasev == 7){
 			var complex_dummy = 0;
 			$.getJSON("sfads_complex.json",function(complex){
-			$each(complex,function(index, value){
+			$.each(complex,function(index, value){
 			if( phasev == value.phase){
 				alert(value.phase);
 					if(  blockv == value.block){
@@ -380,7 +380,7 @@ flnum();
 //SD	
 //alert("I am an alert box!2");
 		$.getJSON("ds.json",function(direction){
-		$each(direction,function(index, value){
+		$.each(direction,function(index, value){
 			if(phasev == value.phase ){
 				if(blockv == value.block){
 					if(flatv == value.flat){
@@ -403,7 +403,7 @@ flnum();
 	//time dummy
 //alert("beforejsontime");
 	$.getJSON("data.json",function(time_dummy){
-		$each(time_dummy,function(index, value){
+		$.each(time_dummy,function(index, value){
 			if(value.time == tdv){
 				TD = value.dummyv ;
 					console.log(value.time);
