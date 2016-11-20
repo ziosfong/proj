@@ -27,48 +27,50 @@ function agenum(){
 		case 1:
 			if (blockv < 8){
 				age = year - 1991;
-				age_dummy = month - 12;
+				age_dummy = (month - 12)/12;
 				age = age + age_dummy;
 			} else {
 				age = year - 1992;
-				age_dummy = month - 8;
+				age_dummy = (month - 8)/12;
 				age = age + age_dummy;
 			}	 
 		break;
 		case 2:
 			age = year - 1993;
-			age_dummy = month - 3;
+			age_dummy = (month - 3)/12;
 			age = age + age_dummy;
 		break;
 		case 3:
 			age = year - 1993;
-			age_dummy = month - 9;
+			age_dummy = (month - 9)/12;
 			age = age + age_dummy;
 		break;
 		case 5:
 			age = year - 1996;
-			age_dummy = month - 2;
+			age_dummy = (month - 2)/12;
 			age = age + age_dummy;
 		break;
 		case 6:
 			age = year - 1997;
-			age_dummy = month - 12;
+			age_dummy = (month - 12)/12;
 			age = age + age_dummy;
 		break;
 		case 7:
 			if (blockv > 7 ){
 			age = year - 1994;
-			age_dummy = month - 12;
+			age_dummy = (month - 12)/12;
 			age = age + age_dummy;
 			}else{
 				age = year - 1995;
-				age_dummy = month - 9;
+				age_dummy = (month - 9)/12;
 				age = age + age_dummy;
 			}
 		break;
 	}
 	if (age<0){
 		alert("The building has not yet completed at that date");
+		document.getElementById("tt_dum").value = "The building is not completed." ;
+		document.getElementById("E_price").value = "Please start from" + Math.abs(age) +"year(s) later"   ;
 	}else{
 	price();
 	}
