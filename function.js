@@ -384,7 +384,7 @@ flnum();
 			if(phasev == value.phase ){
 				if(blockv == value.block){
 					if(flatv == value.flat){
-						var DirS = 1 ;	 
+						 DirS = 1 ;	 
 					document.getElementById("direct_facing").value = DirS ;
 						alert("I am an alert box!2.1");
 						 
