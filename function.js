@@ -1,27 +1,28 @@
-
-   var phasev = parseInt(document.getElementById("phase").value);
-	var blockv = parseInt(document.getElementById("block").value);
-	var flatv = parseInt(document.getElementById("flat").value);
-	var year = parseInt(document.getElementById("year").value);
-	var month = parseInt(document.getElementById("month").value);
-	var fl = parseInt(document.getElementById("fl_level").value);
-	var cp = parseInt(document.getElementById("carcheck").value);
-	var SFA = 0;
-	var DirS = 0;
-	var LU = 0;
-	var	TD = 0;
-	var e_p = 0 ;
-	var fldummy =0;
-	var	age =  0 ;
-    var	age_dummy = 0;
-    var tdv = year.toString() + month.toString();
+	var phasev ;
+	var blockv ;
+	var flatv ;
+	var year;
+	var month;
+	var fl;
+	var cp ;
+	var SFA ;
+	var DirS ;
+	var LU ;
+	var	TD ;
+	var e_p  ;
+	var fldummy ;
+	var	age  ;
+    var	age_dummy ;
+    var tdv;
+	var complex_dummy;
+   
 
 function flnum(){
-		var fl = document.getElementById("fl_level").value;
+		  fl = document.getElementById("fl_level").value;
 	
 	if (fl == ""){
 		alert("Please Input Floor Level.");	
-		var age = 0;
+		  age = 0;
 	}
 	if (fl > 38){
 		alert("38th floor is the highest");
@@ -30,10 +31,10 @@ function flnum(){
 
 
 function agenum(){
-	var phasev = parseInt(document.getElementById("phase").value);
-	var blockv = parseInt(document.getElementById("block").value);
-	var year = parseInt(document.getElementById("year").value);
-	var month = parseInt(document.getElementById("month").value);
+	  phasev = parseInt(document.getElementById("phase").value);
+	  blockv = parseInt(document.getElementById("block").value);
+	  year = parseInt(document.getElementById("year").value);
+	  month = parseInt(document.getElementById("month").value);
 	switch (phasev){
 		case 1:
 			if (blockv < 8){
@@ -100,8 +101,8 @@ function agenum(){
 }
 
 function blknum(){
-	var phasev = parseInt(document.getElementById("phase").value);
-	var blockv = parseInt(document.getElementById("block").value);
+	  phasev = parseInt(document.getElementById("phase").value);
+	  blockv = parseInt(document.getElementById("block").value);
 	switch (phasev){
 		case 2:
 				if (blockv > 6){
@@ -130,6 +131,22 @@ function blknum(){
 
 function price(){
 	//alert("I am an alert box!1");
+	  phasev = parseInt(document.getElementById("phase").value);
+	  blockv = parseInt(document.getElementById("block").value);
+	  flatv = parseInt(document.getElementById("flat").value);
+	  year = parseInt(document.getElementById("year").value);
+	  month = parseInt(document.getElementById("month").value);
+	  fl = parseInt(document.getElementById("fl_level").value);
+	  cp = parseInt(document.getElementById("carcheck").value);
+	  SFA = 0;
+	  DirS = 0;
+	  LU = 0;
+	 	TD = 0;
+	  e_p = 0 ;
+	  fldummy =0;
+	 	age =  0 ;
+     	age_dummy = 0;
+      tdv = year.toString() + month.toString();
 	
 		document.getElementById("SFAv").value = SFA ;
 document.getElementById("direct_facing").value = "no" ;
@@ -326,7 +343,7 @@ document.getElementById("direct_facing").value = "no" ;
 			)})
 	//checkifcomplexflat
 	if (phasev == 5 || phasev == 7){
-			var complex_dummy = 0;
+			  complex_dummy = 0;
 			$.getJSON("sfads_complex.json",function(complex){
 			$.each(complex,function(index, value){
 			if( phasev == value.phase){
