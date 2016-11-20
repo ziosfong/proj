@@ -176,8 +176,7 @@ $("#block").change(function(){
       break;
   }
        
-  }
-});
+  });
 
 
 
