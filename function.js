@@ -17,11 +17,11 @@
     var tdv = year.toString() + month.toString();
 
 function flnum(){
-		
+		var fl = document.getElementById("fl_level").value;
 	
 	if (fl == ""){
 		alert("Please Input Floor Level.");	
-		
+		var age = 0;
 	}
 	if (fl > 38){
 		alert("38th floor is the highest");
@@ -30,7 +30,10 @@ function flnum(){
 
 
 function agenum(){
-
+	var phasev = parseInt(document.getElementById("phase").value);
+	var blockv = parseInt(document.getElementById("block").value);
+	var year = parseInt(document.getElementById("year").value);
+	var month = parseInt(document.getElementById("month").value);
 	switch (phasev){
 		case 1:
 			if (blockv < 8){
@@ -97,7 +100,8 @@ function agenum(){
 }
 
 function blknum(){
-
+	var phasev = parseInt(document.getElementById("phase").value);
+	var blockv = parseInt(document.getElementById("block").value);
 	switch (phasev){
 		case 2:
 				if (blockv > 6){
