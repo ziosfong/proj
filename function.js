@@ -149,10 +149,9 @@ function agenum(){
     }
 });
 
-$("#block").change(function(){
+	$("#block").change(function(){
   switch (parseInt($(this).val())){
-		
-        case 1: 
+  case 1: 
       $("#floor option").remove();
 	
 		var array=[];
@@ -174,9 +173,10 @@ $("#block").change(function(){
         $("block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
       });      
       break;
-  }
-       
-  });
+	  
+    }
+});
+
 
 
 
