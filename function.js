@@ -417,18 +417,16 @@ flnum();
 	//alert("I am an alert box!3");
 	//lucky
 
-	switch( fl ){
-		case 8:
-			LU = 1;
-		break;
-		case 18:
-			LU = 1;
-		break;
-		case 28:
-			LU = 1;
-		break;
-		
+	if (fl == 8){
+		LU = 1;
 	}
+		if (fl == 18){
+		LU = 1;
+	}
+		if (fl == 28){
+		LU = 1;
+	}
+	
 	
 	//carpark
 	
