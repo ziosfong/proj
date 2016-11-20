@@ -155,7 +155,7 @@ function agenum(){
       $("#fl_level option").remove();
 	
 		var array=["1"];
-		for( var j = 2; i < 40; i++){
+		for( var j = 2; i < 40; j++){
 		console.log(j);
 		array.push(j);
 		}
@@ -166,7 +166,7 @@ function agenum(){
 	  case 2: 
       $("#fl_level option").remove();
 		var array=["1"];
-		for( var j = 2; j < 37; i++){
+		for( var j = 2; j < 37; j++){
 		array.push(j);
 		}
       $.each(array, function(i, val) {
