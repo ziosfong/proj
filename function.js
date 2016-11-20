@@ -99,7 +99,7 @@ function agenum(){
 	}
 }
 
-function blknum(){
+
 	$("#phase").change(function(){
   switch (parseInt($(this).val())){
 
@@ -152,7 +152,7 @@ function blknum(){
 	  
     }
 });
-}
+
 
 function price(){
 	  phasev = parseInt(document.getElementById("phase").value);
