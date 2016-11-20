@@ -526,7 +526,7 @@ switch (phasev){
 	//window.alert("age");
 	//price
 	
-	e_p =  -0.660694 -0.036439 * age + 0.000952 * age * age + 0.001909 * SFA - 3.01* 0.0000001* SFA * SFA + 0.008297 * fl - 0.000128* fl * fl  + 0.010446 * DirS + 0.004807 * LU + 0.096643 * cp + TD   ;
+	e_p =  -4.714830 -0.036828 * age + 0.000954 * age * age + 0.001891 * SFA - 2.95* 0.0000001* SFA * SFA + 0.008228 * fl - 0.000126* fl * fl  + 0.010369 * DirS + 0.005017 * LU + 0.097372 * cp + TD   ;
 	
 	//print out
 	
