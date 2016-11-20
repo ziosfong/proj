@@ -155,7 +155,7 @@ function agenum(){
       $("#fl_level option").remove();
 	
 		var array=["1"];
-		for( var j = 2; i < 40; j++){
+		for( var j = 2; j < 40; j++){
 		console.log(j);
 		array.push(j);
 		}
