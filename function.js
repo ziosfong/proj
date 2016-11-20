@@ -436,9 +436,10 @@ flnum();
 //alert("beforejsontime");
 	$.getJSON("data.json",function(time_dummy){
 		$.each(time_dummy,function(index, value){
-			if(value.years == year){
-				
-				if(value.months == month){
+			if(year == value.years){
+				alert("right year");
+				if(month == value.months){
+					alert("right month");
 				TD = value.dummyv ;
 				}
 				}
