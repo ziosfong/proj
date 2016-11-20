@@ -152,25 +152,25 @@ function agenum(){
 	$("#block").change(function(){
   switch (parseInt($(this).val())){
   case 1: 
-      $("#floor option").remove();
+      $("#fl_level option").remove();
 	
 		var array=[];
 		for(var i=1;i<40;i++){
 			array.push(i);
 		}
       $.each(array, function(i, val) {
-        $("block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+        $("fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
       });      
       break;
 	  case 2: 
-      $("#floor option").remove();
+      $("#fl_level option").remove();
 	
 		var array=[];
 		for(var i=1;i<435;i++){
 			array.push(i);
 		}
       $.each(array, function(i, val) {
-        $("block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+        $("fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
       });      
       break;
 	  
