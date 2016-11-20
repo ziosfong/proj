@@ -129,7 +129,6 @@ function blknum(){
 }
 
 function price(){
-	//alert("I am an alert box!1");
 	  phasev = parseInt(document.getElementById("phase").value);
 	  blockv = parseInt(document.getElementById("block").value);
 	  flatv = parseInt(document.getElementById("flat").value);
@@ -152,9 +151,7 @@ function price(){
 		
 		
 	
-	//if (month= 1){
-	//	alert("phasev=1")
-	//}
+
 //SFA	
 	switch(phasev){
 		case 1 :
@@ -350,7 +347,7 @@ function price(){
 					if(  blockv == value.block){
 					
 						if (fl == value.floor){	
-							alert("complex");
+							
 							 complex_dummy = 1;
 						}
 					}
@@ -393,12 +390,10 @@ flnum();
 	
 	
 	
-	//	if (SFA > 0 ){
-		//alert("1");
-//	}
+
 
 //SD	
-//alert("I am an alert box!2");
+
 		$.getJSON("ds.json",function(direction){
 		$.each(direction,function(index, value){
 			if(phasev == value.phase ){
@@ -406,7 +401,7 @@ flnum();
 					if(flatv == value.flat){
 						 DirS = 1 ;	 
 					document.getElementById("direct_facing").value = DirS ;
-						alert("I am an alert box!2.1");
+						
 						 
 					
 					}
@@ -414,7 +409,7 @@ flnum();
 				}
 			}
 			)})
-	//alert("I am an alert box!3");
+	
 	//lucky
 
 	if (fl == 8){
@@ -431,7 +426,7 @@ flnum();
 	//carpark
 	
 	//time dummy
-//alert("beforejsontime");
+
 	$.getJSON("data.json",function(time_dummy){
 		$.each(time_dummy,function(index, value){
 			if(year == value.years){
@@ -443,8 +438,7 @@ flnum();
 				}
 			}
 			)})
-//alert("afterjsontime");
-//window.alert(TD.value);
+
 	//building age
 switch (phasev){
 		case 1:
@@ -518,7 +512,7 @@ switch (phasev){
 	console.log(cp);
 	console.log(TD);
 	
-	//window.alert("age");
+	
 	//price
 	
 	e_p =  -0.500481 -0.036194 * age + 0.000950 * age * age + 0.001946 * SFA - 3.14* 0.0000001* SFA * SFA + 0.008121 * fl  + 0.006037 * DirS + 0.005065 * LU + 0.088003 * cp + TD - 0.000119* fl * fl  ;
