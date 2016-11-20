@@ -107,14 +107,14 @@ function agenum(){
       var array = [ "1", "2", "3", "4", "5","6","7","8","9","10","11","12","13","14" ];
       //利用each遍歷array中的值並將每個值新增到Select中
       $.each(array, function(i, val) {
-        $("block").append($("<option value='" + array[i] + "'>" + "Block " + array[i] + "</option>"));
+        $("#block").append($("<option value='" + array[i] + "'>" + "Block " + array[i] + "</option>"));
       });      
       break;
         case 2: 
       $("#block option").remove();
       var array = [ "1","2","3","4","5","6" ];
       $.each(array, function(i, val) {
-        $("#block").append($("<option value='" + array[i] + "'>" + "Block " + + array[i] + "</option>"));
+        $("#block").append($("<option value='" + array[i] + "'>" + "Block " + array[i] + "</option>"));
       });      
       break;
 	   case 3: 
