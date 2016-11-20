@@ -155,9 +155,9 @@ function agenum(){
       $("#fl_level option").remove();
 	
 		var array=["1"];
-		for( var i = 2; i < 40; i++){
-		console.log(i);
-		array.push(i);
+		for( var j = 2; i < 40; i++){
+		console.log(j);
+		array.push(j);
 		}
       $.each(array, function(i, val) {
         $("fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
@@ -166,8 +166,8 @@ function agenum(){
 	  case 2: 
       $("#fl_level option").remove();
 		var array=["1"];
-		for( var i = 2; i < 37; i++){
-		array.push(i);
+		for( var j = 2; j < 37; i++){
+		array.push(j);
 		}
       $.each(array, function(i, val) {
         $("fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
