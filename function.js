@@ -182,7 +182,13 @@ $("#year").change(function(){
 
   switch (parseInt($(this).val())){
 
-
+  default: 
+      $("#month option").remove();
+      var array = [ "1","2","3","4","5","6","7","8","9","10","11","12" ];
+      $.each(array, function(i, val) {
+        $("#month").append($("<option value='" + array[i] + "'>" + "Block "  + array[i] + "</option>"));
+      });      
+      break;
 	
     case 1993: 
       $("#month option").remove();
@@ -192,10 +198,10 @@ $("#year").change(function(){
       });      
       break;
   case 2016: 
-      $("#month option").remove();
-      var array = [ "1", "2", "3", "4", "5", "6", "7","8"];
+      $("#month").remove();
+      var array = [ "1","2","3","4","5","6","7","8" ];
       $.each(array, function(i, val) {
-        $("#month").append($("<option value="" + array[i] + "">" + array[i] + "</option>"));
+        $("#month").append($("<option value='" + array[i] + "'>" + "Block "  + array[i] + "</option>"));
       });      
       break;
  }
