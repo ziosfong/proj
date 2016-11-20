@@ -144,7 +144,7 @@ phasev = parseInt(document.getElementById("phase").value);
 		}
      	 $.each(array, function(i, val) {
         $("#fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
-      	});     		
+      	
 	
 });
 //change floor level
