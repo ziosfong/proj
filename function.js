@@ -8,13 +8,13 @@
 	var SFA ;
 	var DirS ;
 	var LU ;
-	var	TD ;
+	var TD ;
 	var e_p  ;
 	var fldummy ;
-	var	age  ;
-    var	age_dummy ;
+	var age  ;
+    	var age_dummy ;
 	var complex_dummy;
- var k;
+ 	var k;
    
 
 
