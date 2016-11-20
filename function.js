@@ -533,6 +533,7 @@ function price(){
 				if(value.block == blockv){
 					if(value.flat == flatv){
 						PV = 1;
+						console.log ("yes");
 					}
 				}
 				}
