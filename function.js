@@ -160,7 +160,7 @@ function agenum(){
 		array.push(j);
 		}
       $.each(array, function(i, val) {
-        $(#"fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+        $("#fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
       });      
       break;
 	  case 2: 
@@ -170,7 +170,7 @@ function agenum(){
 		array.push(j);
 		}
       $.each(array, function(i, val) {
-        $(#"fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+        $("#fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
       });      
       break;
 	  
