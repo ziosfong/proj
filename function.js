@@ -144,27 +144,25 @@ function agenum(){
 		$.getJSON("floor_menu.json",function(direction){
 		$.each(direction,function(index, value){
 			if(phasev == value.Phase ){
-console.log("1");
 				if(blockv == value.Block){
-					console.log("2");
 					k = value.Mfloor + 1;
-					console.log(k);
 					}
 				}
 				})
 			}
-			)})
-		
-      $("#fl_level option").remove();
+		$("#fl_level option").remove();
 	
 		var array=["1"];
 		for( var j = 2; j < k; j++){
 		console.log(j);
 		array.push(j);
 		}
-      $.each(array, function(i, val) {
+     	 $.each(array, function(i, val) {
         $("#fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
-      });      
+      	});     
+			)})
+		
+      
    
 		
 
