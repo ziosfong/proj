@@ -156,7 +156,7 @@ function agenum(){
 	
 		var array=[];
 		for(var i=1;i<40;i++){
-			array.push(i);
+			array.push(i.toString);
 		}
       $.each(array, function(i, val) {
         $("fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
@@ -166,8 +166,8 @@ function agenum(){
       $("#fl_level option").remove();
 	
 		var array=[];
-		for(var i=1;i<435;i++){
-			array.push(i);
+		for(var i=1;i<43;i++){
+			array.push(i.toString);
 		}
       $.each(array, function(i, val) {
         $("fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
