@@ -147,6 +147,7 @@ function price(){
 	 	age =  0 ;
      	age_dummy = 0;
       tdv = year.toString() + month.toString();
+	  $.ajaxSettings.async = false;
 	
 		document.getElementById("SFAv").value = SFA ;
 document.getElementById("direct_facing").value = "no" ;
