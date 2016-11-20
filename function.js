@@ -515,7 +515,7 @@ switch (phasev){
 	//window.alert("age");
 	//price
 	
-	log(e_p) =  -0.500481 -0.036194 * age + 0.000950 * age * age + 0.001946 * SFA - 3.14* 0.0000001* SFA * SFA + 0.008121 * fl  + 0.006037 * DirS + 0.005065 * LU + 0.088003 * cp + TD - 0.000119* fl * fl  ;
+	e_p =  -0.500481 -0.036194 * age + 0.000950 * age * age + 0.001946 * SFA - 3.14* 0.0000001* SFA * SFA + 0.008121 * fl  + 0.006037 * DirS + 0.005065 * LU + 0.088003 * cp + TD - 0.000119* fl * fl  ;
 	
 	//print out
 	
@@ -525,5 +525,5 @@ switch (phasev){
 	document.getElementById("direct_facing").value = "yes"  ;
 	}
 	document.getElementById("tt_dum").value = TD ;
-	document.getElementById("E_price").value = e_p ;
+	document.getElementById("E_price").value = Math.log(e_p) ;
 }
