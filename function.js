@@ -527,13 +527,16 @@ function price(){
 			}
 			)})
 //park view
-	$.getJSON("parkview.json",function(parkview){
-		$.each(parkview,function(index, value){
+	$.getJSON("parkview.json",function(park_view){
+		$.each(park_view,function(index, value){
 			if(value.phase == phasev){
+				console.log ("yes_1");
 				if(value.block == blockv){
+					console.log ("yes_2");
 					if(value.flat == flatv){
 						PV = 1;
-						console.log ("yes");
+						console.log ("yes_3");
+						
 					}
 				}
 				}
