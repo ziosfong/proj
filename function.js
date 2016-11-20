@@ -563,5 +563,5 @@ switch (phasev){
 		document.getElementById("tt_dum").value = TD ;
 	
 	
-	document.getElementById("E_price").value = Math.exp(e_p)  ;
+	document.getElementById("E_price").value = Math.exp(e_p) *rvd_value  ;
 }
