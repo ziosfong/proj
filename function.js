@@ -530,12 +530,12 @@ function price(){
 	$.getJSON("parkview.json",function(park_view){
 		$.each(park_view,function(index, value){
 			if(value.phase == phasev){
-				console.log ("yes_1");
+				
 				if(value.block == blockv){
-					console.log ("yes_2");
+					
 					if(value.flat == flatv){
 						PV = 1;
-						console.log ("yes_3");
+						
 						
 					}
 				}
