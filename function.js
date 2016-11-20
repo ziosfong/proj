@@ -15,6 +15,7 @@
     	var age_dummy ;
 	var complex_dummy;
  	var k;
+	var rvd_value;
    
 
 
@@ -488,6 +489,7 @@ function price(){
 				if(month == value.months){
 					
 				TD = value.dummyv ;
+				rvd_value = value.rvd;
 				}
 				}
 			}
@@ -561,5 +563,5 @@ switch (phasev){
 		document.getElementById("tt_dum").value = TD ;
 	
 	
-	document.getElementById("E_price").value = Math.pow(10, e_p) ;
+	document.getElementById("E_price").value = Math.pow(10, e_p) * rvd_value ;
 }
