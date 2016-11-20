@@ -14,19 +14,8 @@
 	var	age  ;
     var	age_dummy ;
 	var complex_dummy;
+ var k;
    
-
-function flnum(){
-		  fl = document.getElementById("fl_level").value;
-	
-	if (fl == ""){
-		alert("Please Input Floor Level.");	
-		  age = 0;
-	}
-	if (fl > 38){
-		alert("38th floor is the highest");
-	}
-}
 
 
 function agenum(){
@@ -150,12 +139,21 @@ function agenum(){
 });
 //change floor level
 	$("#block").change(function(){
-  switch (parseInt($(this).val())){
-  case 1: 
+		$.getJSON("floor_menu.json",function(direction){
+		$.each(direction,function(index, value){
+			if(phasev == value.phase ){
+				if(blockv == value.Block){
+					k = value.Mfloor + 1;
+					}
+				}
+				}
+			}
+			)})
+		
       $("#fl_level option").remove();
 	
 		var array=["1"];
-		for( var j = 2; j < 40; j++){
+		for( var j = 2; j < k; j++){
 		console.log(j);
 		array.push(j);
 		}
@@ -163,18 +161,8 @@ function agenum(){
         $("#fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
       });      
       break;
-	  case 2: 
-      $("#fl_level option").remove();
-		var array=["1"];
-		for( var j = 2; j < 37; j++){
-		array.push(j);
-		}
-      $.each(array, function(i, val) {
-        $("#fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
-      });      
-      break;
-	  
-    }
+		
+
 });
 
 
