@@ -608,8 +608,8 @@ switch (phasev){
 	
 	//print out
 	
-	document.getElementById("SFAv").value = SFA ;
-	document.getElementById("B_age").value = age.toPrecision(4) ;
+	document.getElementById("SFAv").value = SFA + " ft." ;
+	document.getElementById("B_age").value = age.toPrecision(4)+" Year" ;
 	if (DirS == 1){
 	document.getElementById("direct_facing").value = "yes"  ;
 	}
@@ -617,5 +617,5 @@ switch (phasev){
 		document.getElementById("tt_dum").value = TD ;
 	
 	
-	document.getElementById("E_price").value = e_p.toPrecision(4)  ;
+	document.getElementById("E_price").value = e_p.toPrecision(4) + " Million"  ;
 }
