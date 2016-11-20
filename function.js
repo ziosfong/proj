@@ -159,7 +159,7 @@ function agenum(){
      	 $.each(array, function(i, val) {
         $("#fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
       	});     
-			)})}
+		
 	
 		
       
