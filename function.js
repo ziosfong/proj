@@ -184,12 +184,11 @@ $("#year").change(function(){
 
 
 	
-  case 1993: 
+    case 1993: 
       $("#month option").remove();
-      var array = [ "2", "3", "4", "5", "6","7","8","9","10","11","12"];
-   
+      var array = [ "2","3","4","5","6","7","8","9","10","11","12"];
       $.each(array, function(i, val) {
-        $("#sel2").append($("<option value="" + array[i] + "">" + array[i] + "</option>"));
+        $("#month").append($("<option value='" + array[i] + "'>" + "Block "  + array[i] + "</option>"));
       });      
       break;
   case 2016: 
