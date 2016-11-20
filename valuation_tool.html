@@ -7,7 +7,7 @@
 <tr><td>
 <form>
 Block:
-	<select id="phase" >
+	<select id="phase" onchange="blknum()">
 		<option value="1">Phase1 Locwood Court</option>
 		<option value="2">Phase2 Sherwood Court</option>
 		<option value="3">Phase3 Chestwood Court</option>
@@ -15,7 +15,7 @@ Block:
 		<option value="6">Phase6 Maywoodwood Court</option>
 		<option value="7">Phase7 Kenswood Court</option>
 	</select>
-	<select id="block" onchange="blknum()">
+	<select id="block" >
 		<option value="1">Block 1</option>
 		<option value="2">Block 2</option>
 		<option value="3">Block 3</option>

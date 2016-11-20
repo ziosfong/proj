@@ -102,30 +102,58 @@ function agenum(){
 function blknum(){
 	  phasev = parseInt(document.getElementById("phase").value);
 	  blockv = parseInt(document.getElementById("block").value);
-	switch (phasev){
-		case 2:
-				if (blockv > 6){
-				alert ("Only 6 blocks in phase 2.Please change your input.");
-				}
-		break;
-		case 3:
-				if (blockv > 6){
-				alert ("Only 6 blocks in phase 3.Please change your input.");
-				}
-		break;
-		case 5:
-			if (blockv > 10){
-				alert ("Only 10 blocks in phase 2.Please change your input.");
-			}
-		break;
-		case 6:
-			if (blockv > 8){
-				alert ("Only 8 blocks in phase 6. Please change your input.");
-			}
-		break;
+	$("#phase").change(function(){
+  switch (parseInt($(this).val())){
 
-
-	}
+        case 0: 
+      $("block option").remove();
+      break;
+        case 1: 
+      $("block option").remove();
+      var array = [ "1", "2", "3", "4", "5","6","7","8","9","10","11","12","13","14" ];
+      //利用each遍歷array中的值並將每個值新增到Select中
+      $.each(array, function(i, val) {
+        $("block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+      });      
+      break;
+        case 2: 
+      $("#block option").remove();
+      var array = [ "1","2","3","4","5","6" ];
+      $.each(array, function(i, val) {
+        $("#block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+      });      
+      break;
+	   case 3: 
+      $("#block option").remove();
+      var array = [ "1","2","3","4","5","6" ];
+      $.each(array, function(i, val) {
+        $("#block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+      });      
+      break;
+	   case 5: 
+      $("#block option").remove();
+      var array = [ "1","2","3","4","5","6","7","8","9","10" ];
+      $.each(array, function(i, val) {
+        $("#block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+      });      
+      break;
+	   case 6: 
+      $("#block option").remove();
+      var array = [ "1","2","3","4","5","6", "7","8"];
+      $.each(array, function(i, val) {
+        $("#block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+      });      
+      break;
+	   case 7: 
+      $("#block option").remove();
+      var array = [ "1","2","3","4","5","6","7","8","9","10","11","12","13","14" ];
+      $.each(array, function(i, val) {
+        $("#block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+      });      
+      break;
+	  
+    }
+});
 }
 
 function price(){
