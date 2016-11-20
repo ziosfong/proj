@@ -525,5 +525,5 @@ switch (phasev){
 	document.getElementById("direct_facing").value = "yes"  ;
 	}
 	document.getElementById("tt_dum").value = TD ;
-	document.getElementById("E_price").value = 10 ^e_p ;
+	document.getElementById("E_price").value = 10^e_p ;
 }
