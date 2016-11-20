@@ -347,9 +347,11 @@ document.getElementById("direct_facing").value = "no" ;
 			$.getJSON("sfads_complex.json",function(complex){
 			$.each(complex,function(index, value){
 			if( phasev == value.phase){
-				alert(value.phase);
+				
 					if(  blockv == value.block){
-						if (fl == value.floor){
+					
+						if (fl == value.floor){	
+							alert("complex");
 							 complex_dummy = 1;
 						}
 					}
