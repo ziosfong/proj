@@ -609,5 +609,5 @@ switch (phasev){
 		document.getElementById("tt_dum").value = TD ;
 	
 	
-	document.getElementById("E_price").value = e_p.toPrecision(2)  ;
+	document.getElementById("E_price").value = e_p.toPrecision(4)  ;
 }
