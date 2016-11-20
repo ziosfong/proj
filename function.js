@@ -230,6 +230,7 @@ function price(){
 	  fldummy =0;
 	 age =  0 ;
      age_dummy = 0;
+	PV=0;
 	  $.ajaxSettings.async = false;
 	
 		document.getElementById("SFAv").value = SFA ;
@@ -590,6 +591,7 @@ switch (phasev){
 	
 	console.log(age);
 	console.log(age_dummy);
+	console.log(PV);
 	//window.alert("age");
 	//price
 	
