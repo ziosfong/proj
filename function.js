@@ -13,7 +13,6 @@
 	var fldummy ;
 	var	age  ;
     var	age_dummy ;
-    var tdv;
 	var complex_dummy;
    
 
@@ -146,7 +145,6 @@ function price(){
 	  fldummy =0;
 	 	age =  0 ;
      	age_dummy = 0;
-      tdv = year.toString() + month.toString();
 	  $.ajaxSettings.async = false;
 	
 		document.getElementById("SFAv").value = SFA ;
@@ -419,9 +417,18 @@ flnum();
 	//alert("I am an alert box!3");
 	//lucky
 
-	//if (fl = "8" || fl = "18" || fl = "28" || fl = "38"){
-		//LU = 1;
-	//}
+	switch(fl){
+		case 8:
+			LU = 1;
+		break;
+		case 18:
+			LU = 1;
+		break;
+		case 28:
+			LU = 1;
+		break;
+		
+	}
 	
 	//carpark
 	
@@ -429,10 +436,11 @@ flnum();
 //alert("beforejsontime");
 	$.getJSON("data.json",function(time_dummy){
 		$.each(time_dummy,function(index, value){
-			if(value.time == tdv){
-				alert("td");
+			if(value.years == year){
+				
+				if(value.months == month){
 				TD = value.dummyv ;
-					console.log(value.time);
+				}
 				}
 			}
 			)})
