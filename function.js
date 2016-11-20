@@ -143,7 +143,7 @@ function agenum(){
 	  blockv = parseInt(document.getElementById("block").value);
 		$.getJSON("floor_menu.json",function(direction){
 		$.each(direction,function(index, value){
-			if(phasev == value.phase ){
+			if(phasev == value.Phase ){
 console.log("1");
 				if(blockv == value.Block){
 					console.log("2");
