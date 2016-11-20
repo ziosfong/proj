@@ -496,59 +496,45 @@ switch (phasev){
 		case 1:
 			if (blockv < 8){
 				age = year - 1991;
-				age_dummy = month - 12;
-				if(age_dummy < 0){
-					age= age-1 ;
-				}
+				age_dummy = (month - 12)/12;
+				age= age + age_dummy ;
+				
 			} else {
 				age = year - 1992;
-				age_dummy = month - 8;
-				if(age_dummy < 0){
-					age= age-1 ;
-				}
+				age_dummy = (month - 8)/12;
+				age= age + age_dummy ;
 			}	 
 		break;
 		case 2:
 			age = year - 1993;
-			age_dummy = age - 3;
-			if(age_dummy < 0){
-					age= age-1 ;
-				}
+			age_dummy = (age - 3)/12;
+			age= age + age_dummy;
 		break;
 		case 3:
 			age = year - 1993;
-			age_dummy = age - 9;
-			if(age_dummy < 0){
-					age= age-1 ;
-				}
+			age_dummy = (month - 9)/12;
+			age= age + age_dummy;
+			
 		break;
 		case 5:
 			age = year - 1996;
-			age_dummy = age - 2;
-			if(age_dummy < 0){
-					age= age-1 ;
-				}
+			age_dummy = (age - 2)/12;
+			age= age + age_dummy;
 		break;
 		case 6:
 			age = year - 1997;
-			age_dummy = age - 12;
-			if(age_dummy < 0){
-					age= age-1 ;
-				}
+			age_dummy = (age - 12)/12;
+			age= age + age_dummy;
 		break;
 		case 7:
 			if (blockv > 7 ){
 			age = year - 1994;
-			age_dummy = age - 12;
-			if(age_dummy < 0){
-					age= age-1 ;
-				}
+			age_dummy = (age - 12)/12;
+			age= age + age_dummy;
 			}else{
 				age = year - 1995;
-				age_dummy = age - 9;
-				if(age_dummy < 0){
-					age= age-1 ;
-				}
+				age_dummy = (age - 9)/12;
+				age= age + age_dummy;
 			}
 		break;
 	}
