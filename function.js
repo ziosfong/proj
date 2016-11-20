@@ -179,7 +179,11 @@ $("#phase").change(function(){
     //change date
 
 $("#year").change(function(){
-
+  $("#month option").remove();
+      var array = [ "1","2","3","4","5","6","7","8","9","10","11","12" ];
+      $.each(array, function(i, val) {
+        $("#month").append($("<option value='" + array[i] + "'>"  + array[i] + "</option>"));
+      });  
   switch (parseInt($(this).val())){
 
   default: 
