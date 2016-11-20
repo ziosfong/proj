@@ -155,7 +155,7 @@ $("#block").change(function(){
         case 1: 
       $("#floor option").remove();
 		var i=1;
-		var arr=[];
+		var array=[];
 		for(i;i<40;i++){
 			arr.push(i);
 		}
