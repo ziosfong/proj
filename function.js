@@ -140,15 +140,15 @@ function price(){
 	  SFA = 0;
 	  DirS = 0;
 	  LU = 0;
-	 	TD = 0;
+	 TD = 0;
 	  e_p = 0 ;
 	  fldummy =0;
-	 	age =  0 ;
-     	age_dummy = 0;
+	 age =  0 ;
+     age_dummy = 0;
 	  $.ajaxSettings.async = false;
 	
 		document.getElementById("SFAv").value = SFA ;
-document.getElementById("direct_facing").value = "no" ;
+		document.getElementById("direct_facing").value = "no" ;
 		
 		
 	
@@ -396,7 +396,7 @@ flnum();
 	//	if (SFA > 0 ){
 		//alert("1");
 //	}
-	document.getElementById("SFAv").value = SFA ;
+
 //SD	
 //alert("I am an alert box!2");
 		$.getJSON("ds.json",function(direction){
@@ -417,7 +417,7 @@ flnum();
 	//alert("I am an alert box!3");
 	//lucky
 
-	switch(fl){
+	switch( fl ){
 		case 8:
 			LU = 1;
 		break;
@@ -437,9 +437,9 @@ flnum();
 	$.getJSON("data.json",function(time_dummy){
 		$.each(time_dummy,function(index, value){
 			if(year == value.years){
-				alert("right year");
+				
 				if(month == value.months){
-					alert("right month");
+					
 				TD = value.dummyv ;
 				}
 				}
