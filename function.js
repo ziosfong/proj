@@ -28,63 +28,49 @@ function agenum(){
 			if (blockv < 8){
 				age = year - 1991;
 				age_dummy = month - 12;
-				if(age_dummy < 0){
-					age= age-1 ;
-				}
+				age = age + age_dummy;
 			} else {
 				age = year - 1992;
 				age_dummy = month - 8;
-				if(age_dummy < 0){
-					age= age-1 ;
-				}
+				age = age + age_dummy;
 			}	 
 		break;
 		case 2:
 			age = year - 1993;
-			age_dummy = age - 3;
-			if(age_dummy < 0){
-					age= age-1 ;
-				}
+			age_dummy = month - 3;
+			age = age + age_dummy;
 		break;
 		case 3:
 			age = year - 1993;
-			age_dummy = age - 9;
-			if(age_dummy < 0){
-					age= age-1 ;
-				}
+			age_dummy = month - 9;
+			age = age + age_dummy;
 		break;
 		case 5:
 			age = year - 1996;
-			age_dummy = age - 2;
-			if(age_dummy < 0){
-					age= age-1 ;
-				}
+			age_dummy = month - 2;
+			age = age + age_dummy;
 		break;
 		case 6:
 			age = year - 1997;
-			age_dummy = age - 12;
-			if(age_dummy < 0){
-					age= age-1 ;
-				}
+			age_dummy = month - 12;
+			age = age + age_dummy;
 		break;
 		case 7:
 			if (blockv > 7 ){
 			age = year - 1994;
-			age_dummy = age - 12;
-			if(age_dummy < 0){
-					age= age-1 ;
-				}
+			age_dummy = month - 12;
+			age = age + age_dummy;
 			}else{
 				age = year - 1995;
-				age_dummy = age - 9;
-				if(age_dummy < 0){
-					age= age-1 ;
-				}
+				age_dummy = month - 9;
+				age = age + age_dummy;
 			}
 		break;
 	}
 	if (age<0){
 		alert("The building has not yet completed at that date");
+	}else{
+	price();
 	}
 }
 
@@ -530,8 +516,7 @@ switch (phasev){
 		break;
 	}
 	
-	
-	document.getElementById("B_age").value = age + 1 ;
+
 	
 	console.log(age);
 	console.log(SFA);
@@ -553,6 +538,9 @@ switch (phasev){
 	if (DirS == 1){
 	document.getElementById("direct_facing").value = "yes"  ;
 	}
-	document.getElementById("tt_dum").value = TD ;
+
+		document.getElementById("tt_dum").value = TD ;
+	
+	
 	document.getElementById("E_price").value = Math.pow(10, e_p) ;
 }
