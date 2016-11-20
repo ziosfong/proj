@@ -17,6 +17,7 @@
  	var k;
 	var rvd_value;
 	var ep_dummy;
+	var PV;
    
 
 
@@ -175,7 +176,38 @@ $("#phase").change(function(){
       	});     
 		})});
 		
-      
+    //change date
+
+$("#year").change(function(){
+
+  switch (parseInt($(this).val())){
+
+
+	default:
+	  $("#month option").remove();
+      var array = [ "1","2", "3", "4", "5", "6","7","8","9","10","11","12"];
+      //利用each遍歷array中的值並將每個值新增到Select中
+      $.each(array, function(i, val) {
+        $("#month").append($("<option value="" + array[i] + "">" + array[i] + "</option>"));
+      });      
+      break;
+  case 1993: 
+      $("#month option").remove();
+      var array = [ "2", "3", "4", "5", "6","7","8","9","10","11","12"];
+   
+      $.each(array, function(i, val) {
+        $("#sel2").append($("<option value="" + array[i] + "">" + array[i] + "</option>"));
+      });      
+      break;
+  case 2016: 
+      $("#month option").remove();
+      var array = [ "1", "2", "3", "4", "5", "6", "7","8"];
+      $.each(array, function(i, val) {
+        $("#month").append($("<option value="" + array[i] + "">" + array[i] + "</option>"));
+      });      
+      break;
+ }
+});
    
 		
 
@@ -551,7 +583,7 @@ switch (phasev){
 	//window.alert("age");
 	//price
 	
-	ep_dummy =  - 4.714830 - 0.036828 * age + 0.000954 * age * age + 0.001891 * SFA - 2.95* 0.0000001* SFA * SFA + 0.008228 * fl - 0.000126* fl * fl  + 0.010369 * DirS + 0.005017 * LU + 0.097372 * cp + TD   ;
+	ep_dummy =  - 4.710810 - 0.036888 * age + 0.000953 * age * age + 0.001882 * SFA - 2.92* 0.0000001* SFA * SFA + 0.008229 * fl - 0.000126* fl * fl  + 0.010884 * DirS + 0.005078 * LU + 0.093824 * cp + 0.033210 * PV + TD   ;
 	 e_p = Math.exp(ep_dummy) * rvd_value;
 	
 	//print out
