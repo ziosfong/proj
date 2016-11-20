@@ -149,8 +149,7 @@ function agenum(){
 					}
 				}
 				})
-			}
-		$("#fl_level option").remove();
+				$("#fl_level option").remove();
 	
 		var array=["1"];
 		for( var j = 2; j < k; j++){
@@ -160,7 +159,8 @@ function agenum(){
      	 $.each(array, function(i, val) {
         $("#fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
       	});     
-			)})
+			)})}
+	
 		
       
    
