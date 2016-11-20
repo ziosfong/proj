@@ -189,7 +189,7 @@ function price(){
 		case 1 :
 			switch(flatv){
 					case 1:
-							SFA = 649;
+						 	SFA = 649;
 						break;
 					case 2:
 							SFA = 640;
