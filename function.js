@@ -151,7 +151,7 @@ function agenum(){
 
 $("#block").change(function(){
   switch (parseInt($(this).val())){
-		var p=0;
+		
         case 1: 
       $("#floor option").remove();
 	
