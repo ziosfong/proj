@@ -480,6 +480,14 @@ switch (phasev){
 	
 	document.getElementById("B_age").value = age + 1 ;
 	
+	console.log(age);
+	console.log(SFA);
+	console.log(fl);
+	console.log(DirS);
+	console.log(LU);
+	console.log(cp);
+	console.log(TD);
+	
 	//window.alert("age");
 	//price
 	
@@ -492,6 +500,6 @@ switch (phasev){
 	if (DirS == 1){
 	document.getElementById("direct_facing").value = "yes"  ;
 	}
-	document.getElementById("tt_dum").value = cp ;
+	document.getElementById("tt_dum").value = TD ;
 	document.getElementById("E_price").value = e_p ;
 }
