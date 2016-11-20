@@ -617,7 +617,7 @@ switch (phasev){
 
 		document.getElementById("tt_dum").value = TD ;
 	if( PV==1 ){
-	document..getElementById("p_view").value = yes ;
+	document.getElementById("p_view").value = yes ;
 	}
 	
 	document.getElementById("E_price").value = e_p.toPrecision(4) + " Million"  ;
