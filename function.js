@@ -156,7 +156,7 @@ $("#block").change(function(){
       $("#floor option").remove();
 		var i=1;
 		var arr=[];
-		for(i,i<40,i++){
+		for(i;i<40;i++){
 			arr.push(i);
 		}
      //利用each遍歷array中的值並將每個值新增到Select中
