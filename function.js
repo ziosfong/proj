@@ -125,6 +125,27 @@ function agenum(){
       break;
 	  
     }	
+		
+		phasev = parseInt(document.getElementById("phase").value);
+	  	blockv = parseInt(document.getElementById("block").value);
+		$.getJSON("floor_menu.json",function(direction){
+		$.each(direction,function(index, value){
+			if(phasev == value.Phase ){
+				if(blockv == value.Block){
+					k = value.Mfloor + 1;
+					}
+				}
+				})
+		$("#fl_level option").remove();
+		var array=["1"];
+		for( var j = 2; j < k; j++){
+		console.log(j);
+		array.push(j);
+		}
+     	 $.each(array, function(i, val) {
+        $("#fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+      	});    
+		
 });
 //change floor level
 	$("#block").change(function(){
@@ -139,7 +160,6 @@ function agenum(){
 				}
 				})
 		$("#fl_level option").remove();
-	
 		var array=["1"];
 		for( var j = 2; j < k; j++){
 		console.log(j);
