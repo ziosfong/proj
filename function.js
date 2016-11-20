@@ -151,15 +151,26 @@ function agenum(){
 
 $("#block").change(function(){
   switch (parseInt($(this).val())){
-	
+		var p=0;
         case 1: 
       $("#floor option").remove();
-		var i=1;
+	
 		var array=[];
-		for(i;i<40;i++){
-			arr.push(i);
+		for(var i=1;i<40;i++){
+			array.push(i);
 		}
-     //利用each遍歷array中的值並將每個值新增到Select中
+      $.each(array, function(i, val) {
+        $("block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+      });      
+      break;
+  }
+        case 2: 
+      $("#floor option").remove();
+	
+		var array=[];
+		for(var i=1;i<435;i++){
+			array.push(i);
+		}
       $.each(array, function(i, val) {
         $("block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
       });      
