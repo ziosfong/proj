@@ -609,7 +609,7 @@ switch (phasev){
 	//print out
 	
 	document.getElementById("SFAv").value = SFA ;
-	document.getElementById("B_age").value = age ;
+	document.getElementById("B_age").value = age.toPrecision(4) ;
 	if (DirS == 1){
 	document.getElementById("direct_facing").value = "yes"  ;
 	}
