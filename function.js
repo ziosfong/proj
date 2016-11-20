@@ -163,8 +163,7 @@ $("#block").change(function(){
         $("block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
       });      
       break;
-  }
-        case 2: 
+	  case 2: 
       $("#floor option").remove();
 	
 		var array=[];
@@ -175,6 +174,8 @@ $("#block").change(function(){
         $("block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
       });      
       break;
+  }
+       
   }
 });
 
