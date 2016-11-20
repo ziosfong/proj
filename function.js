@@ -151,12 +151,14 @@ function agenum(){
 
 $("#block").change(function(){
   switch (parseInt($(this).val())){
-	  var array ; 
+	
         case 1: 
       $("#floor option").remove();
-	  for (var i =1, 39,i++){
-		  array[i] = i;
-	  }
+		var i=1;
+		var arr=[];
+		for(i,i<40,i++){
+			arr.push(i);
+		}
      //利用each遍歷array中的值並將每個值新增到Select中
       $.each(array, function(i, val) {
         $("block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
