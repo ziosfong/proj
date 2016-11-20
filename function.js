@@ -429,6 +429,7 @@ flnum();
 	$.getJSON("data.json",function(time_dummy){
 		$.each(time_dummy,function(index, value){
 			if(value.time == tdv){
+				alert("td");
 				TD = value.dummyv ;
 					console.log(value.time);
 				}
