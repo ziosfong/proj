@@ -71,7 +71,7 @@ function agenum(){
 		alert("The building has not yet completed at that date");
 		document.getElementById("B_age").value = age ;
 		document.getElementById("tt_dum").value = "Building is not completed." ;
-		document.getElementById("E_price").value = Math.abs(year - 1995) +"year(s)" + Math.abs(age_dummy * 12) + " month(s) later"   ;
+		document.getElementById("E_price").value = num.toFixed(age) +"year(s)" + Math.abs(age -num.toFixed(age)) * 12 + " month(s) later"   ;
 	}else{
 	price();
 	}
