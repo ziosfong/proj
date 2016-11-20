@@ -183,14 +183,7 @@ $("#year").change(function(){
   switch (parseInt($(this).val())){
 
 
-	default:
-	  $("#month option").remove();
-      var array = [ "1","2", "3", "4", "5", "6","7","8","9","10","11","12"];
-      //利用each遍歷array中的值並將每個值新增到Select中
-      $.each(array, function(i, val) {
-        $("#month").append($("<option value="" + array[i] + "">" + array[i] + "</option>"));
-      });      
-      break;
+	
   case 1993: 
       $("#month option").remove();
       var array = [ "2", "3", "4", "5", "6","7","8","9","10","11","12"];
