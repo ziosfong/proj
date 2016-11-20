@@ -1,3 +1,21 @@
+
+   var phasev = parseInt(document.getElementById("phase").value);
+	var blockv = parseInt(document.getElementById("block").value);
+	var flatv = parseInt(document.getElementById("flat").value);
+	var year = parseInt(document.getElementById("year").value);
+	var month = parseInt(document.getElementById("month").value);
+	var fl = parseInt(document.getElementById("fl_level").value);
+	var cp = parseInt(document.getElementById("carcheck").value);
+	var SFA = 0;
+	var DirS = 0;
+	var LU = 0;
+	var	TD = 0;
+	var e_p = 0 ;
+	var fldummy =0;
+	var	age =  0 ;
+    var	age_dummy = 0;
+    var tdv = year.toString() + month.toString();
+
 function flnum(){
 		var fl = document.getElementById("fl_level").value;
 	
@@ -112,23 +130,7 @@ function blknum(){
 
 function price(){
 	//alert("I am an alert box!1");
-	var phasev = parseInt(document.getElementById("phase").value);
-	var blockv = parseInt(document.getElementById("block").value);
-	var flatv = parseInt(document.getElementById("flat").value);
-	var year = parseInt(document.getElementById("year").value);
-	var month = parseInt(document.getElementById("month").value);
-	var fl = parseInt(document.getElementById("fl_level").value);
-	var cp = parseInt(document.getElementById("carcheck").value);
-	var SFA = 0;
-	var DirS = 0;
-	var LU = 0;
-	var	TD = 0;
-	var e_p = 0 ;
-	var fldummy =0;
-	var	age =  0 ;
-    var	age_dummy = 0;
 	
-	var tdv = year.toString() + month.toString();
 		document.getElementById("SFAv").value = SFA ;
 document.getElementById("direct_facing").value = "no" ;
 		
