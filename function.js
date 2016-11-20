@@ -16,6 +16,7 @@
 	var complex_dummy;
  	var k;
 	var rvd_value;
+	var ep_dummy;
    
 
 
@@ -550,7 +551,8 @@ switch (phasev){
 	//window.alert("age");
 	//price
 	
-	e_p =  - 4.714830 - 0.036828 * age + 0.000954 * age * age + 0.001891 * SFA - 2.95* 0.0000001* SFA * SFA + 0.008228 * fl - 0.000126* fl * fl  + 0.010369 * DirS + 0.005017 * LU + 0.097372 * cp + TD   ;
+	ep_dummy =  - 4.714830 - 0.036828 * age + 0.000954 * age * age + 0.001891 * SFA - 2.95* 0.0000001* SFA * SFA + 0.008228 * fl - 0.000126* fl * fl  + 0.010369 * DirS + 0.005017 * LU + 0.097372 * cp + TD   ;
+	 e_p = Math.exp(ep_dummy) * rvd_value;
 	
 	//print out
 	
@@ -563,5 +565,5 @@ switch (phasev){
 		document.getElementById("tt_dum").value = TD ;
 	
 	
-	document.getElementById("E_price").value = Math.exp(e_p) *rvd_value  ;
+	document.getElementById("E_price").value = e_p.toPrecision(2)  ;
 }
