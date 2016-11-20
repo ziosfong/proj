@@ -99,56 +99,56 @@ function agenum(){
 	}
 }
 
-
+//change block
 	$("#phase").change(function(){
   switch (parseInt($(this).val())){
         case 1: 
       $("#block option").remove();
-      var array = [ "Block 1", "Block 2", "Block 3", "Block 4", "Block 5","Block 6","Block 7","Block 8","Block 9","Block 10","Block 11","Block 12","Block 13","Block 14" ];
+      var array = [ "1", "2", "3", "4", "5","6","7","8","9","10","11","12","13","14" ];
       //利用each遍歷array中的值並將每個值新增到Select中
       $.each(array, function(i, val) {
-        $("block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+        $("block").append($("<option value='" + array[i] + "'>" + "Block " + array[i] + "</option>"));
       });      
       break;
         case 2: 
       $("#block option").remove();
-      var array = [ "Block 1","Block 2","Block 3","Block 4","Block 5","Block 6" ];
+      var array = [ "1","2","3","4","5","6" ];
       $.each(array, function(i, val) {
-        $("#block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+        $("#block").append($("<option value='" + array[i] + "'>" + "Block " + + array[i] + "</option>"));
       });      
       break;
 	   case 3: 
       $("#block option").remove();
-      var array = [ "Block 1","Block 2","Block 3","Block 4","Block 5","Block 6" ];
+      var array = [ "1","2","3","4","5","6" ];
       $.each(array, function(i, val) {
-        $("#block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+        $("#block").append($("<option value='" + array[i] + "'>" + "Block "  + array[i] + "</option>"));
       });      
       break;
 	   case 5: 
       $("#block option").remove();
-      var array = [ "Block 1","Block 2","Block 3","Block 4","Block 5","Block 6","Block 7","Block 8","Block 9","Block 10" ];
+      var array = [ "1","2","3","4","5","6","7","8","9","10" ];
       $.each(array, function(i, val) {
-        $("#block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+        $("#block").append($("<option value='" + array[i] + "'>" + "Block "  + array[i] + "</option>"));
       });      
       break;
 	   case 6: 
       $("#block option").remove();
-      var array = [ "Block 1","Block 2","Block 3","Block 4","Block 5","Block 6", "Block 7","Block 8"];
+      var array = [ "1","2","3","4","5","6", "7","8"];
       $.each(array, function(i, val) {
-        $("#block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+        $("#block").append($("<option value='" + array[i] + "'>" + "Block "  + array[i] + "</option>"));
       });      
       break;
 	   case 7: 
       $("#block option").remove();
-      var array = [ "Block 1","Block 2","Block 3","Block 4","Block 5","Block 6","Block 7","Block 8","Block 9","Block 10","Block 11","Block 12","Block 13","Block 14" ];
+      var array = [ "1","2","3","4","5","6","7","8","9","10","11","12","13","14" ];
       $.each(array, function(i, val) {
-        $("#block").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+        $("#block").append($("<option value='" + array[i] + "'>" + "Block "  + array[i] + "</option>"));
       });      
       break;
 	  
     }
 });
-
+//change floor level
 	$("#block").change(function(){
   switch (parseInt($(this).val())){
   case 1: 
