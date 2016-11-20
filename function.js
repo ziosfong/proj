@@ -69,8 +69,9 @@ function agenum(){
 	}
 	if (age<0){
 		alert("The building has not yet completed at that date");
-		document.getElementById("tt_dum").value = "The building is not completed." ;
-		document.getElementById("E_price").value = "Please start from" + Math.abs(age) +"year(s) later"   ;
+		document.getElementById("B_age").value = age ;
+		document.getElementById("tt_dum").value = "Building is not completed." ;
+		document.getElementById("E_price").value = "Start from" + Math.abs(age) +"year(s) later"   ;
 	}else{
 	price();
 	}
