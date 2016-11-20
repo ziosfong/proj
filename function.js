@@ -487,7 +487,7 @@ switch (phasev){
 		break;
 		case 2:
 			age = year - 1993;
-			age_dummy = (age - 3)/12;
+			age_dummy = (month - 3)/12;
 			age= age + age_dummy;
 		break;
 		case 3:
@@ -498,22 +498,22 @@ switch (phasev){
 		break;
 		case 5:
 			age = year - 1996;
-			age_dummy = (age - 2)/12;
+			age_dummy = (month - 2)/12;
 			age= age + age_dummy;
 		break;
 		case 6:
 			age = year - 1997;
-			age_dummy = (age - 12)/12;
+			age_dummy = (month - 12)/12;
 			age= age + age_dummy;
 		break;
 		case 7:
 			if (blockv > 7 ){
 			age = year - 1994;
-			age_dummy = (age - 12)/12;
+			age_dummy = (month - 12)/12;
 			age= age + age_dummy;
 			}else{
 				age = year - 1995;
-				age_dummy = (age - 9)/12;
+				age_dummy = (month - 9)/12;
 				age= age + age_dummy;
 			}
 		break;
@@ -522,13 +522,7 @@ switch (phasev){
 
 	
 	console.log(age);
-	console.log(SFA);
-	console.log(fl);
-	console.log(DirS);
-	console.log(LU);
-	console.log(cp);
-	console.log(TD);
-	
+	console.log(age_dummy);
 	//window.alert("age");
 	//price
 	
