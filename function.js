@@ -125,6 +125,29 @@ function agenum(){
       break;
 	  
     }
+		
+		$("#block").change(function(){
+		phasev = parseInt(document.getElementById("phase").value);
+	  	blockv = parseInt(document.getElementById("block").value);
+		$.getJSON("floor_menu.json",function(direction){
+		$.each(direction,function(index, value){
+			if(phasev == value.Phase ){
+				if(blockv == value.Block){
+					k = value.Mfloor + 1;
+					}
+				}
+				})
+		$("#fl_level option").remove();
+	
+		var array=["1"];
+		for( var j = 2; j < k; j++){
+		console.log(j);
+		array.push(j);
+		}
+     	 $.each(array, function(i, val) {
+        $("#fl_level").append($("<option value='" + array[i] + "'>" + array[i] + "</option>"));
+      	});     
+		})});
 });
 //change floor level
 	$("#block").change(function(){
@@ -526,7 +549,7 @@ switch (phasev){
 	//window.alert("age");
 	//price
 	
-	e_p =  -4.714830 -0.036828 * age + 0.000954 * age * age + 0.001891 * SFA - 2.95* 0.0000001* SFA * SFA + 0.008228 * fl - 0.000126* fl * fl  + 0.010369 * DirS + 0.005017 * LU + 0.097372 * cp + TD   ;
+	e_p =  - 4.714830 - 0.036828 * age + 0.000954 * age * age + 0.001891 * SFA - 2.95* 0.0000001* SFA * SFA + 0.008228 * fl - 0.000126* fl * fl  + 0.010369 * DirS + 0.005017 * LU + 0.097372 * cp + TD   ;
 	
 	//print out
 	
